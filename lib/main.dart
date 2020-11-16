@@ -12,10 +12,7 @@ class CarteleraLlanoApp extends StatelessWidget {
       title: "Cartelera del llano",
       theme: ThemeData(
         primarySwatch: Colors.orange,
-        colorScheme: ColorScheme(),
-        secondaryHeaderColor: Colors.white,
-        accentColor: Colors.white,
-        brightness: Brightness.light,
+        primaryColorBrightness: Brightness.dark,
       ),
       home: MainScreen(),
     );
