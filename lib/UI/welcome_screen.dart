@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class MainScreen extends StatelessWidget {
+class WelcomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,6 +22,10 @@ class MainScreen extends StatelessWidget {
             image: AssetImage('assets/images/arco-fondo.png'),
             fit: BoxFit.fitWidth,
             centerSlice: Rect.fromLTRB(0, 0, 0, 0),
+            colorFilter: ColorFilter.mode(
+              Colors.black.withOpacity(0.2),
+              BlendMode.srcIn,
+            ),
             alignment: Alignment.topCenter,
           ),
         ),

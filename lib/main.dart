@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:cartelera_del_llano/UI/main_screen.dart';
+import 'package:cartelera_del_llano/UI/welcome_screen.dart';
 
 void main() {
   runApp(CarteleraLlanoApp());
@@ -21,7 +21,7 @@ class CarteleraLlanoApp extends StatelessWidget {
           ),
         ),
       ),
-      home: MainScreen(),
+      home: WelcomeScreen(),
     );
   }
 }
