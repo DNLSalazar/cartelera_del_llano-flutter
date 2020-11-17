@@ -20,6 +20,16 @@ class CarteleraLlanoApp extends StatelessWidget {
           headline1: TextStyle(
             fontFamily: 'Texta',
             fontWeight: FontWeight.w500,
+            fontSize: 40,
+            color: Colors.white,
+            letterSpacing: .1,
+          ),
+          subtitle1: TextStyle(
+            fontFamily: 'Texta',
+            fontWeight: FontWeight.w300,
+            fontSize: 25,
+            color: Colors.white,
+            letterSpacing: .1,
           ),
         ),
       ),

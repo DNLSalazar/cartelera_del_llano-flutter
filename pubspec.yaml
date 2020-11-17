@@ -51,6 +51,7 @@ flutter:
     - assets/images/persona.png
     - assets/images/artista.png
     - assets/images/arco-fondo.png
+    - assets/images/arco-fondo3.png
     - assets/images/corazon-llanero.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
