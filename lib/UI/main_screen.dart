@@ -21,7 +21,8 @@ class MainScreen extends StatelessWidget {
           image: DecorationImage(
             image: AssetImage('assets/images/arco-fondo.png'),
             fit: BoxFit.fitWidth,
-            alignment: Alignment.center,
+            centerSlice: Rect.fromLTRB(0, 0, 0, 0),
+            alignment: Alignment.topCenter,
           ),
         ),
         child: Column(
@@ -31,7 +32,9 @@ class MainScreen extends StatelessWidget {
             Padding(
               padding:
                   const EdgeInsets.symmetric(horizontal: 40.0, vertical: 0),
-              child: Image.asset('assets/images/logo.png'),
+              child: Image.asset(
+                'assets/images/logo.png',
+              ),
             ),
           ],
         ),
