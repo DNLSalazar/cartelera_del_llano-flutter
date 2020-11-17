@@ -1,11 +1,21 @@
+import 'package:cartelera_del_llano/UI/screens/main_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:cartelera_del_llano/UI/welcome_screen.dart';
+import 'package:cartelera_del_llano/UI/screens/welcome_screen.dart';
 
 void main() {
   runApp(CarteleraLlanoApp());
 }
 
 class CarteleraLlanoApp extends StatelessWidget {
+  Future<bool> _cargarPantalla() async {
+    try {
+      await Future.delayed(Duration(seconds: 3));
+      return true;
+    } catch (err) {
+      throw err;
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -21,7 +31,14 @@ class CarteleraLlanoApp extends StatelessWidget {
           ),
         ),
       ),
-      home: WelcomeScreen(),
+      home: FutureBuilder(
+        future: _cargarPantalla(),
+        builder: (context, AsyncSnapshot<bool> snapshot) {
+          if (snapshot.data == null) return WelcomeScreen();
+
+          return MainScreen();
+        },
+      ),
     );
   }
 }
