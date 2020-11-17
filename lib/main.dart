@@ -12,7 +12,14 @@ class CarteleraLlanoApp extends StatelessWidget {
       title: "Cartelera del llano",
       theme: ThemeData(
         primaryColor: Color(0xFFEF7900),
-        accentColor: Colors.white,
+        accentColor: Color(0xFFFFC900),
+        fontFamily: 'Texta',
+        textTheme: TextTheme(
+          headline1: TextStyle(
+            fontFamily: 'Texta',
+            fontWeight: FontWeight.w500,
+          ),
+        ),
       ),
       home: MainScreen(),
     );
